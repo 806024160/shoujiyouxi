@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+ /* 百分比：根据父盒子的宽度来计算的 */
+ /* vw是设备的宽度来计算的 */
+ /* vh是设备的高度来计算的 */
+/* em是当前字体大小来计算的  */
+/* rem 是根据HTML的字体大小来计算 */
+    html{
+        font-size: 50px;
+    }
+    .father{
+        font-size: 20px;
+    }
+    .son{
+
+        width: 2.2rem;
+        height: 2rem;
+        border: 1px solid red;
+        font-size: 10px;
+    }
+
+</style>
+<body>
+    <!-- 100vw等于设备的宽度 -->
+    <div></div>
+    <div class="father">
+        <div class="son">asdasd</div>
+    </div>
+  
+</body>
+</html>

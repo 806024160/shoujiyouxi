@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            display: flex;
+            flex-wrap: wrap;
+           
+           
+        }
+        .son1{
+            display: flex;
+        }
+        .son1 img{
+            
+            background-color: red;
+            display: flex;
+            width: 4.96rem;
+            height: 7rem;
+        }
+        .son2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .son2 img{
+            width: 4.96rem;
+            height: 3.46rem;
+           
+        }
+        .son3 img{
+            width: 4.96rem;
+            height: 3.46rem;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="father">
+       <div class="son1"><img src="a.jpg" alt=""><div class="son2"><img src="b.jpg" alt=""> <div class="son3"><img src="c.jpg" alt=""></div></div></div>
+       
+       
+      
+   </div>
+    <script>
+        function init() {
+            var width = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = width / 10 + 'px';
+        }
+        init();
+        window.addEventListener('resize', init);
+        window.addEventListener('orientationchange', init);
+    </script>
+</body>
+
+</html>
